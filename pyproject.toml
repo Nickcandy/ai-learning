@@ -1,0 +1,20 @@
+[project]
+name = "ai-learning"
+version = "0.1.0"
+description = "Runnable AI Agent course based on LangChain, LangGraph, and Eino"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx[socks]>=0.28,<1",
+  "langchain>=1.2,<2",
+  "langchain-openai>=1,<2",
+  "langchain-text-splitters>=1,<2",
+  "langgraph>=1,<2",
+  "python-dotenv>=1,<2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

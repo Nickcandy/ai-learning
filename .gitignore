@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+coverage.out
+
+# Large reference repository kept locally for RAG experiments.
+materials/ai-agent-book/
